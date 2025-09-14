@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven's Corner Grocery & Pantry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Haven's<span>Corner</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Fresh from Our Farm to Your Table Since 1987</h1>
+            <p>Locally sourced produce, handmade jams, artisan bread, coffee, and traditional Indian pantry staples.</p>
+        </div>
+    </section>
+
+    <!-- Featured Products Carousel -->
+    <section class="featured-products section">
+        <div class="container">
+            <h2 class="section-title">Weekly Specials</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/apples.jpg" alt="Organic Apples" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Apples</h3>
+                        <p class="product-price">₹120/kg</p>
+                        <p class="product-description">Crisp, sweet apples from our neighbor's orchard, picked at peak ripeness.</p>
+                        <button class="btn add-to-cart" data-id="1" data-name="Organic Apples" data-price="120">Add to Cart</button>
+                    </div>
+                    <div class="weekly-special">SPECIAL</div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/bread.jpg" alt="Artisan Bread" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Sourdough Boule</h3>
+                        <p class="product-price">₹95/500g</p>
+                        <p class="product-description">Baked fresh every morning with natural fermentation and organic flour.</p>
+                        <button class="btn add-to-cart" data-id="2" data-name="Sourdough Boule" data-price="95">Add to Cart</button>
+                    </div>
+                    <div class="weekly-special">SPECIAL</div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/jam.jpg" alt="Handmade Jam" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Blackberry Preserves</h3>
+                        <p class="product-price">₹180/jar (500g)</p>
+                        <p class="product-description">Made in small batches with berries from the local fields and no added pectin.</p>
+                        <button class="btn add-to-cart" data-id="3" data-name="Blackberry Preserves" data-price="180">Add to Cart</button>
+                    </div>
+                    <div class="weekly-special">SPECIAL</div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/coffee.jpg" alt="Local Coffee" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Medium Roast Coffee Beans</h3>
+                        <p class="product-price">₹450/500g</p>
+                        <p class="product-description">Roasted daily by our neighborhood roaster with notes of chocolate and citrus.</p>
+                        <button class="btn add-to-cart" data-id="4" data-name="Medium Roast Coffee Beans" data-price="450">Add to Cart</button>
+                    </div>
+                    <div class="weekly-special">SPECIAL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>More Than Just a Grocery Store</h2>
+                    <p>Since 1987, Haven's Corner has been serving our community with the freshest local products and personal service you won't find at big chains. What started as a small produce stand run by Eleanor and Robert Henderson has grown into a beloved neighborhood institution.</p>
+                    <p>We believe in supporting local farmers and artisans who share our commitment to quality and sustainability. Every jar of jam, loaf of bread, and wheel of cheese on our shelves comes with a story — and often, a handshake.</p>
+                    <p>Our family is your family. We know your name, your favorite snacks, and even your dog's name. Come in for groceries, stay for conversation. That's what makes this place special.</p>
+                    
+                    <div class="handwritten-note">
+                        "I've shopped here since I was a child. The sourdough still tastes just like my grandmother used to buy. This store feels like home." 
+                    </div>
+                    
+                    <h3>Meet the Family</h3>
+                    <p>Today, our daughter Sarah runs the shop alongside her husband Mark, continuing the traditions while adding new favorites like our weekly farmer's market pickup and community cooking classes.</p>
+                </div>
+                <img src="images/family.jpg" alt="The Haven Family" class="owner-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Shop Local -->
+    <section class="why-shop-local section">
+        <div class="container">
+            <h2>Why Shop Local?</h2>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Support Farmers</h3>
+                    <p>Your dollars go directly to local growers who care about their land and community.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-truck-loading"></i>
+                    <h3>Reduced Carbon Footprint</h3>
+                    <p>Food travels fewer miles, meaning less pollution and fresher ingredients.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Better Quality</h3>
+                    <p>Small producers take pride in their work — you can taste the difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">Best sourdough in town! I drive 20 minutes just to get my weekly loaf. The crust is perfect and the inside is so airy. I'm hooked!</p>
+                <p class="testimonial-author">— Sarah M., Neighborhood Resident</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Page -->
+    <section class="products section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="produce">Produce</button>
+                <button class="filter-btn" data-filter="dairy">Dairy</button>
+                <button class="filter-btn" data-filter="bakery">Bakery</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+                <button class="filter-btn" data-filter="pantry">Pantry</button>
+                <button class="filter-btn" data-filter="kirana">Kirana</button>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Produce Products -->
+                <div class="product-card" data-category="produce">
+                    <img src="images/vegetables.jpg" alt="Seasonal Vegetables" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Seasonal Vegetables</h3>
+                        <p class="product-price">₹80-180/kg</p>
+                        <p class="product-description">Fresh from nearby farms, harvested that morning. Rotating selection based on what's in season.</p>
+                        <button class="btn add-to-cart" data-id="5" data-name="Seasonal Vegetables" data-price="80">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="produce">
+                    <img src="images/tomatoes.jpg" alt="Heirloom Tomatoes" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Heirloom Tomatoes</h3>
+                        <p class="product-price">₹160/kg</p>
+                        <p class="product-description">Vibrant colors and intense flavors from heirloom varieties grown without synthetic pesticides.</p>
+                        <button class="btn add-to-cart" data-id="11" data-name="Heirloom Tomatoes" data-price="160">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="produce">
+                    <img src="images/oranges.jpg" alt="Fresh Oranges" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Oranges</h3>
+                        <p class="product-price">₹100/kg</p>
+                        <p class="product-description">Juicy, sweet oranges from Florida, perfect for breakfast or snacks.</p>
+                        <button class="btn add-to-cart" data-id="12" data-name="Fresh Oranges" data-price="100">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="produce">
+                    <img src="images/bananas.jpg" alt="Bananas" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Bananas</h3>
+                        <p class="product-price">₹60/kg</p>
+                        <p class="product-description">Ripe, sweet bananas delivered fresh from sustainable farms.</p>
+                        <button class="btn add-to-cart" data-id="13" data-name="Bananas" data-price="60">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="produce">
+                    <img src="images/onions.jpg" alt="Red Onions" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Red Onions</h3>
+                        <p class="product-price">₹65/kg</p>
+                        <p class="product-description">Freshly harvested red onions with crisp texture and mild flavor.</p>
+                        <button class="btn add-to-cart" data-id="31" data-name="Red Onions" data-price="65">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="produce">
+                    <img src="images/garlic.jpg" alt="Fresh Garlic" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Garlic</h3>
+                        <p class="product-price">₹220/kg</p>
+                        <p class="product-description">Locally grown garlic bulbs with strong aroma and flavor.</p>
+                        <button class="btn add-to-cart" data-id="32" data-name="Fresh Garlic" data-price="220">Add to Cart</button>
+                        <span class="category-badge">Produce</span>
+                    </div>
+                </div>
+                
+                <!-- Dairy Products -->
+                <div class="product-card" data-category="dairy">
+                    <img src="images/cheese.jpg" alt="Aged Cheddar Wheel" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Aged Cheddar Wheel</h3>
+                        <p class="product-price">₹1,250/kg</p>
+                        <p class="product-description">Handcrafted by our neighbor's dairy farm using traditional methods and raw milk.</p>
+                        <button class="btn add-to-cart" data-id="6" data-name="Aged Cheddar Wheel" data-price="1250">Add to Cart</button>
+                        <span class="category-badge">Dairy</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="dairy">
+                    <img src="images/yogurt.jpg" alt="Goat Milk Yogurt" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Goat Milk Yogurt</h3>
+                        <p class="product-price">₹180/500g</p>
+                        <p class="product-description">Creamy, tangy yogurt made with goat milk from our neighboring farm. No additives or thickeners.</p>
+                        <button class="btn add-to-cart" data-id="10" data-name="Goat Milk Yogurt" data-price="180">Add to Cart</button>
+                        <span class="category-badge">Dairy</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="dairy">
+                    <img src="images/milk.jpg" alt="Farm Fresh Milk" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Farm Fresh Milk</h3>
+                        <p class="product-price">₹75/liter</p>
+                        <p class="product-description">Raw, unhomogenized milk from our local dairy, delivered daily.</p>
+                        <button class="btn add-to-cart" data-id="14" data-name="Farm Fresh Milk" data-price="75">Add to Cart</button>
+                        <span class="category-badge">Dairy</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="dairy">
+                    <img src="images/butter.jpg" alt="Grass-Fed Butter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Grass-Fed Butter</h3>
+                        <p class="product-price">₹420/250g</p>
+                        <p class="product-description">Rich, golden butter from cows grazing on organic pastures.</p>
+                        <button class="btn add-to-cart" data-id="15" data-name="Grass-Fed Butter" data-price="420">Add to Cart</button>
+                        <span class="category-badge">Dairy</span>
+                    </div>
+                </div>
+                
+                <!-- Bakery Products -->
+                <div class="product-card" data-category="bakery">
+                    <img src="images/wholewheat.jpg" alt="Whole Wheat Sourdough" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Whole Wheat Sourdough</h3>
+                        <p class="product-price">₹110/500g</p>
+                        <p class="product-description">Naturally leavened with a nutty flavor and hearty texture. Perfect for sandwiches or toast.</p>
+                        <button class="btn add-to-cart" data-id="7" data-name="Whole Wheat Sourdough" data-price="110">Add to Cart</button>
+                        <span class="category-badge">Bakery</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="bakery">
+                    <img src="images/croissant.jpg" alt="Butter Croissants" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Butter Croissants</h3>
+                        <p class="product-price">₹45 each</p>
+                        <p class="product-description">Flaky, buttery croissants baked fresh daily from authentic French recipes.</p>
+                        <button class="btn add-to-cart" data-id="16" data-name="Butter Croissants" data-price="45">Add to Cart</button>
+                        <span class="category-badge">Bakery</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="bakery">
+                    <img src="images/baguettes.jpg" alt="French Baguettes" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">French Baguettes</h3>
+                        <p class="product-price">₹85 each</p>
+                        <p class="product-description">Crispy crust with soft interior, perfect for sandwiches or dipping.</p>
+                        <button class="btn add-to-cart" data-id="17" data-name="French Baguettes" data-price="85">Add to Cart</button>
+                        <span class="category-badge">Bakery</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="bakery">
+                    <img src="images/muffins.jpg" alt="Blueberry Muffins" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Blueberry Muffins</h3>
+                        <p class="product-price">₹55 each</p>
+                        <p class="product-description">Moist, fluffy muffins loaded with fresh blueberries from our local farm.</p>
+                        <button class="btn add-to-cart" data-id="18" data-name="Blueberry Muffins" data-price="55">Add to Cart</button>
+                        <span class="category-badge">Bakery</span>
+                    </div>
+                </div>
+                
+                <!-- Beverage Products -->
+                <div class="product-card" data-category="beverages">
+                    <img src="images/coffeebeans.jpg" alt="Medium Roast Coffee Beans" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Medium Roast Coffee Beans</h3>
+                        <p class="product-price">₹450/500g</p>
+                        <p class="product-description">Roasted daily by our neighborhood roaster with notes of chocolate and citrus.</p>
+                        <button class="btn add-to-cart" data-id="4" data-name="Medium Roast Coffee Beans" data-price="450">Add to Cart</button>
+                        <span class="category-badge">Beverages</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="beverages">
+                    <img src="images/coldbrew.jpg" alt="Cold Brew Coffee" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Cold Brew Concentrate</h3>
+                        <p class="product-price">₹420/250ml</p>
+                        <p class="product-description">Steeped for 18 hours with our signature roast. Dilute with water or milk for the perfect cup.</p>
+                        <button class="btn add-to-cart" data-id="8" data-name="Cold Brew Concentrate" data-price="420">Add to Cart</button>
+                        <span class="category-badge">Beverages</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="beverages">
+                    <img src="images/herbaltea.jpg" alt="Local Herbal Tea Blend" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Local Herbal Tea Blend</h3>
+                        <p class="product-price">₹190/100g</p>
+                        <p class="product-description">Hand-picked chamomile, mint, and lemon balm from our garden. Soothing and naturally caffeine-free.</p>
+                        <button class="btn add-to-cart" data-id="12" data-name="Local Herbal Tea Blend" data-price="190">Add to Cart</button>
+                        <span class="category-badge">Beverages</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="beverages">
+                    <img src="images/juice.jpg" alt="Fresh Orange Juice" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Orange Juice</h3>
+                        <p class="product-price">₹140/500ml</p>
+                        <p class="product-description">Cold-pressed daily from locally grown oranges. No sugar added.</p>
+                        <button class="btn add-to-cart" data-id="19" data-name="Fresh Orange Juice" data-price="140">Add to Cart</button>
+                        <span class="category-badge">Beverages</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="beverages">
+                    <img src="images/tea.jpg" alt="Masala Chai Tea" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Masala Chai Tea</h3>
+                        <p class="product-price">₹220/250g</p>
+                        <p class="product-description">Traditional Indian chai blend with black tea, cardamom, cinnamon, and cloves.</p>
+                        <button class="btn add-to-cart" data-id="29" data-name="Masala Chai Tea" data-price="220">Add to Cart</button>
+                        <span class="category-badge">Beverages</span>
+                    </div>
+                </div>
+                
+                <!-- Pantry Products -->
+                <div class="product-card" data-category="pantry">
+                    <img src="images/honey.jpg" alt="Wildflower Honey" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Wildflower Honey</h3>
+                        <p class="product-price">₹480/500g</p>
+                        <p class="product-description">Harvested from wildflowers surrounding our valley. Raw, unfiltered, and packed with local pollen.</p>
+                        <button class="btn add-to-cart" data-id="9" data-name="Wildflower Honey" data-price="480">Add to Cart</button>
+                        <span class="category-badge">Pantry</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="pantry">
+                    <img src="images/jam.jpg" alt="Blackberry Preserves" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Blackberry Preserves</h3>
+                        <p class="product-price">₹180/jar (500g)</p>
+                        <p class="product-description">Made in small batches with berries from the local fields and no added pectin.</p>
+                        <button class="btn add-to-cart" data-id="3" data-name="Blackberry Preserves" data-price="180">Add to Cart</button>
+                        <span class="category-badge">Pantry</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="pantry">
+                    <img src="images/oil.jpg" alt="Extra Virgin Olive Oil" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Extra Virgin Olive Oil</h3>
+                        <p class="product-price">₹850/500ml</p>
+                        <p class="product-description">Cold-pressed from olives grown in California's central valley.</p>
+                        <button class="btn add-to-cart" data-id="20" data-name="Extra Virgin Olive Oil" data-price="850">Add to Cart</button>
+                        <span class="category-badge">Pantry</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="pantry">
+                    <img src="images/spices.jpg" alt="Mixed Spices Set" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Mixed Spices Set</h3>
+                        <p class="product-price">₹320/set</p>
+                        <p class="product-description">Five essential spices: cumin, coriander, turmeric, paprika, and cinnamon.</p>
+                        <button class="btn add-to-cart" data-id="21" data-name="Mixed Spices Set" data-price="320">Add to Cart</button>
+                        <span class="category-badge">Pantry</span>
+                    </div>
+                </div>
+                
+                <!-- Kirana Products -->
+                <div class="product-card" data-category="kirana">
+                    <img src="images/rice.jpg" alt="Basmati Rice" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Basmati Rice</h3>
+                        <p class="product-price">₹150/kg</p>
+                        <p class="product-description">Premium long-grain basmati rice imported from India.</p>
+                        <button class="btn add-to-cart" data-id="22" data-name="Basmati Rice" data-price="150">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/lentils.jpg" alt="Red Lentils" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Red Lentils</h3>
+                        <p class="product-price">₹110/kg</p>
+                        <p class="product-description">Organic red lentils, perfect for dal and soups.</p>
+                        <button class="btn add-to-cart" data-id="23" data-name="Red Lentils" data-price="110">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/pasta.jpg" alt="Whole Wheat Pasta" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Whole Wheat Pasta</h3>
+                        <p class="product-price">₹125/500g</p>
+                        <p class="product-description">Traditional Italian pasta made with 100% whole wheat flour.</p>
+                        <button class="btn add-to-cart" data-id="24" data-name="Whole Wheat Pasta" data-price="125">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/sugar.jpg" alt="Organic Sugar" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Sugar</h3>
+                        <p class="product-price">₹130/kg</p>
+                        <p class="product-description">Unrefined cane sugar, perfect for baking and beverages.</p>
+                        <button class="btn add-to-cart" data-id="25" data-name="Organic Sugar" data-price="130">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/flour.jpg" alt="Whole Wheat Flour" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Whole Wheat Flour</h3>
+                        <p class="product-price">₹115/kg</p>
+                        <p class="product-description">Stone-ground whole wheat flour, ideal for homemade bread and baked goods.</p>
+                        <button class="btn add-to-cart" data-id="26" data-name="Whole Wheat Flour" data-price="115">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/turmeric.jpg" alt="Ground Turmeric" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Ground Turmeric</h3>
+                        <p class="product-price">₹320/100g</p>
+                        <p class="product-description">Pure ground turmeric root, rich in antioxidants.</p>
+                        <button class="btn add-to-cart" data-id="27" data-name="Ground Turmeric" data-price="320">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/salt.jpg" alt="Sea Salt" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Sea Salt</h3>
+                        <p class="product-price">₹95/500g</p>
+                        <p class="product-description">Hand-harvested sea salt with natural minerals.</p>
+                        <button class="btn add-to-cart" data-id="28" data-name="Sea Salt" data-price="95">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/chai.jpg" alt="Masala Chai Tea" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Masala Chai Tea</h3>
+                        <p class="product-price">₹220/250g</p>
+                        <p class="product-description">Traditional Indian chai blend with black tea, cardamom, cinnamon, and cloves.</p>
+                        <button class="btn add-to-cart" data-id="29" data-name="Masala Chai Tea" data-price="220">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/curry.jpg" alt="Curry Powder" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Curry Powder</h3>
+                        <p class="product-price">₹280/100g</p>
+                        <p class="product-description">Authentic Indian curry powder with turmeric, cumin, coriander, and fenugreek.</p>
+                        <button class="btn add-to-cart" data-id="30" data-name="Curry Powder" data-price="280">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/dal.jpg" alt="Toor Dal" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Toor Dal</h3>
+                        <p class="product-price">₹140/kg</p>
+                        <p class="product-description">High-quality split pigeon peas, perfect for making sambar.</p>
+                        <button class="btn add-to-cart" data-id="33" data-name="Toor Dal" data-price="140">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/jeera.jpg" alt="Cumin Seeds" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Cumin Seeds</h3>
+                        <p class="product-price">₹250/100g</p>
+                        <p class="product-description">Freshly roasted cumin seeds with intense aroma and flavor.</p>
+                        <button class="btn add-to-cart" data-id="34" data-name="Cumin Seeds" data-price="250">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/pepper.jpg" alt="Black Pepper" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Black Pepper</h3>
+                        <p class="product-price">₹450/100g</p>
+                        <p class="product-description">Premium Malabar black pepper with bold, spicy flavor.</p>
+                        <button class="btn add-to-cart" data-id="35" data-name="Black Pepper" data-price="450">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="kirana">
+                    <img src="images/ghee.jpg" alt="Clarified Butter" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">Clarified Butter (Ghee)</h3>
+                        <p class="product-price">₹680/500g</p>
+                        <p class="product-description">Slow-cooked clarified butter from grass-fed cow's milk.</p>
+                        <button class="btn add-to-cart" data-id="36" data-name="Clarified Butter (Ghee)" data-price="680">Add to Cart</button>
+                        <span class="category-badge">Kirana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Find Us</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Haven's Corner Grocery & Pantry</strong>
+                            <p>123 Main Street, Havenville, VT 05482</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <p>(802) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <p>hello@havenscorner.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours</strong>
+                            <p>Mon-Sat: 8am - 7pm<br>Sunday: 9am - 5pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        [Google Maps Embed Placeholder]
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Cart</h2>
+                <button class="close-modal" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-total">
+                Total: ₹<span id="cartTotal">0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <div class="checkout-step">
+                    <div class="step-indicator active">1</div>
+                    <div class="step-indicator">2</div>
+                    <div class="step-indicator">3</div>
+                </div>
+            </div>
+            
+            <div style="padding: 20px;">
+                <h3>Order Summary</h3>
+                <div id="checkoutSummary">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <h3>Pickup Option</h3>
+                    <div class="pickup-option">
+                        <input type="radio" name="pickup" id="pickup" checked>
+                        <label for="pickup">Pickup Only</label>
+                    </div>
+                    
+                    <div class="pickup-time">
+                        Estimated Pickup Time: Today, 4:00 PM - 6:00 PM
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <h3>Special Instructions</h3>
+                        <textarea placeholder="Any special requests for your order?" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px; resize: vertical;"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="confirm-btn" id="confirmOrder">Complete Order</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Haven's<span>Corner</span></div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <p class="footer-bottom">© 2023 Haven's Corner Grocery & Pantry. All rights reserved. Open until 7pm every day — rain or shine!</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
